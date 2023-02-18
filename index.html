@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="shadow p-5 d-flex w-75 justify-content-evenly">
+            <div class="shadow p-5 car-room">
+                <div class="d-flex justify-content-evenly">
+                 <div class="mx-2 p-2">A</div>
+                 <div class="mx-2 border border-info p-2" onclick="selectCar('AHonda')"><img src="./imagen1.jpg" alt=""></div>
+                 <div class="mx-2 border border-info p-2" onclick="selectCar('APegeot')"><img src="./imagen2.jpg" alt=""></div>
+                 <div class="mx-2 border border-info p-2" onclick="selectCar('AFerrari')"><img src="./imagen3.jpg" alt=""></div>
+                 <div class="mx-2 border border-info p-2" onclick="selectCar('ALexus')"><img src="./imagen4.jpg" alt=""></div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                    <div class="mx-2 p-2">B</div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('BHonda')"><img src="./imagen1.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('BPegeot')"><img src="./imagen2.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('BFerrari')"><img src="./imagen3.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('BLexus')"><img src="./imagen4.jpg" alt=""></div>
+                   </div>
+                   <div class="d-flex justify-content-evenly">
+                    <div class="mx-2 p-2">C</div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('CHonda')"><img src="./imagen1.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('CPegeot')"><img src="./imagen2.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('CFerrari')"><img src="./imagen3.jpg" alt=""></div>
+                    <div class="mx-2 border border-info p-2" onclick="selectCar('CLexus')"><img src="./imagen4.jpg" alt=""></div>
+                   </div>
+            </div>
+            <div class="shadow p-5">
+                <h5 id="form-title"></h5>
+                <form>
+                    <div class="my-2">
+                        <label for="name">Ingrese su nombre</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="my-2">
+                        <label for="cc">Ingrese la cedula</label>
+                        <input type="text" id="cc"></div>
+                    <div class="text-center">
+                        <button type="button"  class="btn btn-primary text-center" onclick="createReservation()">Reservar</button>
+                    </div>
+                </form>
+                <table class="table my-5">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Cedula</th>
+                        <th>Vehiculo</th>
+                        <th>Accion</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
